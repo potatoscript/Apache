@@ -1,5 +1,5 @@
 ### STEP 1 :
-- Download Apache 2.4 Install : (http-2.4.29-win32-VC15) from `ttp://www.apachelounge.com/download/`
+- Download Apache 2.4 Install : (http-2.4.29-win32-VC15) from `http://www.apachelounge.com/download/`
 - Extract the zip Apache24 to the root of c:\  -> c:\Apache24
 
 ### STEP 2 :
