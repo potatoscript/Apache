@@ -1,5 +1,5 @@
 ### STEP 1 :
-- Download Apache 2.4 Install : (http-2.4.29-win32-VC15) from `http://www.apachelounge.com/download/`
+- Download Apache 2.4 Install : (http-2.4.29-win32-VC15) from http://www.apachelounge.com/download/
 - Extract the zip Apache24 to the root of c:\  -> c:\Apache24
 
 ### STEP 2 :
@@ -7,7 +7,7 @@
 - This is required for Apache to run.
 
 ### STEP 3 :
-- Download PHP 5 from `http://windows.php.net/download/
+- Download PHP 5 from http://windows.php.net/download/
 
 ### STEP 4 :
 - Edit Apache's config file `c:\Apache24\conf\httpd.conf
