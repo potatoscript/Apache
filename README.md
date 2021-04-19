@@ -3,7 +3,8 @@
 - Extract the zip Apache24 to the root of c:\  -> c:\Apache24
 
 ### STEP 2 :
-- Install microsoft Visual C++ 2015 Runtime
+- Install a framework called microsoft Visual C++ 2015 Runtime
+- 
 - This is required for Apache to run.
 
 ### STEP 3 :
@@ -20,9 +21,14 @@
    LoadFile "c:/php/libpq.dll"
 ```
 - Set the ServerName `http://yourserverName:80`
+
 - Find Directory index and add index.php as below
+- So we can load hte index.php at the initial load of our localhost server
 ```
-  DirectoryIndex  index.html  index.php
+<IfModule dir_module>
+    DirectoryIndex index.php index.html
+	
+</IfModule>
 ```
 
 ### STEP 5 :
@@ -55,6 +61,12 @@
 ```
    ;extension_dir = "ext"  -> extension_dir = "ext"
 ```
+
+- if error occur: Call to undefined function then you need to set it explicitly.
+```
+  extension_dir = "C:\php\ext"
+```
+
 - Uncomment pgsql modules as below
 ```
    ;extension = php_pdo_pgsql.dll  -> extension = php_pdo_pgsql.dll
